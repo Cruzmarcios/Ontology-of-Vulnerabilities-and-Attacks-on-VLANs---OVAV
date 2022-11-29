@@ -1,0 +1,517 @@
+Prefix(:=<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+
+
+Ontology(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology->
+
+Declaration(Class(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Attack>))
+Declaration(Class(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackImpact>))
+Declaration(Class(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention>))
+Declaration(Class(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Countermeasure>))
+Declaration(Class(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Impact>))
+Declaration(Class(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty>))
+Declaration(Class(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack>))
+Declaration(Class(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability>))
+Declaration(Class(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#VLAN>))
+Declaration(Class(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Vulnerability>))
+Declaration(NamedIndividual(:ARP-Attack_Prevention))
+Declaration(NamedIndividual(:ArpAttack))
+Declaration(NamedIndividual(:AttackVmpsVqp))
+Declaration(NamedIndividual(:Authenticity))
+Declaration(NamedIndividual(:Availability))
+Declaration(NamedIndividual(:CAM-Table-Overflow_Prevention))
+Declaration(NamedIndividual(:CDP-Attack_Prevention))
+Declaration(NamedIndividual(:CamTableOverflowAttack))
+Declaration(NamedIndividual(:CdpAttack))
+Declaration(NamedIndividual(:Confidentiality))
+Declaration(NamedIndividual(:Critical))
+Declaration(NamedIndividual(:DHCP-Spoofing_Prevention))
+Declaration(NamedIndividual(:DHCP-Starvation_Prevention))
+Declaration(NamedIndividual(:DhcpSpoofingAttack))
+Declaration(NamedIndividual(:DhcpStarvationAttack))
+Declaration(NamedIndividual(:Double-Tagging_Prevention))
+Declaration(NamedIndividual(:DoubleTaggingAttack))
+Declaration(NamedIndividual(:High))
+Declaration(NamedIndividual(:ID01_PortSecurity))
+Declaration(NamedIndividual(:ID02_UdpPackets))
+Declaration(NamedIndividual(:ID03_Protocol802.1q))
+Declaration(NamedIndividual(:ID04_SpoofPvlanTraffic))
+Declaration(NamedIndividual(:ID05_ArbitraryCode))
+Declaration(NamedIndividual(:ID06_SubsetAdvert))
+Declaration(NamedIndividual(:ID07_FrameVtp))
+Declaration(NamedIndividual(:ID08_VtpUpdate))
+Declaration(NamedIndividual(:ID09_VtpBufferOverflow))
+Declaration(NamedIndividual(:ID10_VoiceVlan))
+Declaration(NamedIndividual(:ID11_VtpNotTransparent))
+Declaration(NamedIndividual(:ID12_VlanLanNotRegistered))
+Declaration(NamedIndividual(:ID13_DroppedPackets))
+Declaration(NamedIndividual(:ID14_MalformedFrame))
+Declaration(NamedIndividual(:ID15_MemoryCorruption))
+Declaration(NamedIndividual(:ID16_UserSpaceAccess))
+Declaration(NamedIndividual(:ID17_PromiscuousMode))
+Declaration(NamedIndividual(:ID18_PriorityTagged))
+Declaration(NamedIndividual(:ID19_FlagRestriction))
+Declaration(NamedIndividual(:ID20_SpoofUser))
+Declaration(NamedIndividual(:ID21_FrameFlood))
+Declaration(NamedIndividual(:ID22_EncryptionFunctionality))
+Declaration(NamedIndividual(:ID23_ArpRequest))
+Declaration(NamedIndividual(:ID24_VlansEnumeration))
+Declaration(NamedIndividual(:ID25_ReservedVlanPacket))
+Declaration(NamedIndividual(:ID26_VlanIsolation))
+Declaration(NamedIndividual(:ID27_SniffingVlan))
+Declaration(NamedIndividual(:ID28_VlanIndexes))
+Declaration(NamedIndividual(:ID29_VlanHeaders))
+Declaration(NamedIndividual(:ID30_AuthenticationFails))
+Declaration(NamedIndividual(:ID31_BufferOverflowVlanStrip))
+Declaration(NamedIndividual(:ID32_VlanAuthentication))
+Declaration(NamedIndividual(:ID33_ImproperAccess))
+Declaration(NamedIndividual(:ID34_VtpProcessing))
+Declaration(NamedIndividual(:ID35_ErrdisableCondition))
+Declaration(NamedIndividual(:ID36_TrafficExposure))
+Declaration(NamedIndividual(:ID37_ConfigurationBigIp))
+Declaration(NamedIndividual(:ID38_RecursionLoop))
+Declaration(NamedIndividual(:ID39_ExposureOfPorts))
+Declaration(NamedIndividual(:ID40_IncorrectTraffic))
+Declaration(NamedIndividual(:ID41_TrafficDiscard))
+Declaration(NamedIndividual(:ID42_MacIpBindings))
+Declaration(NamedIndividual(:ID43_GroupVlanConfiguration))
+Declaration(NamedIndividual(:ID44_InterpretationConflict))
+Declaration(NamedIndividual(:ID45_SecurityValidation))
+Declaration(NamedIndividual(:ID46_MulticastDns))
+Declaration(NamedIndividual(:ID47_Layer2Loop))
+Declaration(NamedIndividual(:ID48_DirectConnection))
+Declaration(NamedIndividual(:ID49_LogicErrorAp))
+Declaration(NamedIndividual(:Integrity))
+Declaration(NamedIndividual(:Low))
+Declaration(NamedIndividual(:MAC-Spoofing_Prevention))
+Declaration(NamedIndividual(:MacSpoofingAttack))
+Declaration(NamedIndividual(:Medium))
+Declaration(NamedIndividual(:Multicast-Brute-Force_Prevention))
+Declaration(NamedIndividual(:MulticastBruteForceAttack))
+Declaration(NamedIndividual(:PVLAN-Attack_Prevention))
+Declaration(NamedIndividual(:Privacy))
+Declaration(NamedIndividual(:PvlanAttack))
+Declaration(NamedIndividual(:Randon-Frame-Stress_Prevention))
+Declaration(NamedIndividual(:RandonFrameStressAttack))
+Declaration(NamedIndividual(:Resilience))
+Declaration(NamedIndividual(:STP-Attack_Prevention))
+Declaration(NamedIndividual(:StpAttack))
+Declaration(NamedIndividual(:SwitchSpoofingAttack))
+Declaration(NamedIndividual(:VLAN-Hopping_Prevention))
+Declaration(NamedIndividual(:VMPS-VQP-Attack_Prevention))
+Declaration(NamedIndividual(:VTP-Attack_Prevention))
+Declaration(NamedIndividual(:VlanHoppingAttack))
+Declaration(NamedIndividual(:VtpAttack))
+############################
+#   Classes
+############################
+
+# Class: <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Attack> (<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Attack>)
+
+SubClassOf(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Attack> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#VLAN>)
+DisjointClasses(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Attack> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Countermeasure>)
+DisjointClasses(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Attack> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Impact>)
+DisjointClasses(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Attack> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty>)
+DisjointClasses(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Attack> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Vulnerability>)
+
+# Class: <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackImpact> (<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackImpact>)
+
+SubClassOf(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackImpact> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Impact>)
+
+# Class: <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> (<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention>)
+
+SubClassOf(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Countermeasure>)
+
+# Class: <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Countermeasure> (<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Countermeasure>)
+
+SubClassOf(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Countermeasure> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#VLAN>)
+DisjointClasses(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Countermeasure> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Impact>)
+DisjointClasses(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Countermeasure> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty>)
+DisjointClasses(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Countermeasure> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Vulnerability>)
+
+# Class: <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Impact> (<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Impact>)
+
+SubClassOf(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Impact> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#VLAN>)
+DisjointClasses(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Impact> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty>)
+DisjointClasses(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Impact> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Vulnerability>)
+
+# Class: <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty> (<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty>)
+
+SubClassOf(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#VLAN>)
+DisjointClasses(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Vulnerability>)
+
+# Class: <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> (<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack>)
+
+SubClassOf(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Attack>)
+
+# Class: <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> (<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability>)
+
+SubClassOf(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Vulnerability>)
+
+# Class: <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Vulnerability> (<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Vulnerability>)
+
+SubClassOf(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#Vulnerability> <http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#VLAN>)
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: :ARP-Attack_Prevention (:ARP-Attack_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :ARP-Attack_Prevention)
+
+# Individual: :ArpAttack (:ArpAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :ArpAttack)
+
+# Individual: :AttackVmpsVqp (:AttackVmpsVqp)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :AttackVmpsVqp)
+
+# Individual: :Authenticity (:Authenticity)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty> :Authenticity)
+
+# Individual: :Availability (:Availability)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty> :Availability)
+
+# Individual: :CAM-Table-Overflow_Prevention (:CAM-Table-Overflow_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :CAM-Table-Overflow_Prevention)
+
+# Individual: :CDP-Attack_Prevention (:CDP-Attack_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :CDP-Attack_Prevention)
+
+# Individual: :CamTableOverflowAttack (:CamTableOverflowAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :CamTableOverflowAttack)
+
+# Individual: :CdpAttack (:CdpAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :CdpAttack)
+
+# Individual: :Confidentiality (:Confidentiality)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty> :Confidentiality)
+
+# Individual: :Critical (:Critical)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackImpact> :Critical)
+
+# Individual: :DHCP-Spoofing_Prevention (:DHCP-Spoofing_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :DHCP-Spoofing_Prevention)
+
+# Individual: :DHCP-Starvation_Prevention (:DHCP-Starvation_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :DHCP-Starvation_Prevention)
+
+# Individual: :DhcpSpoofingAttack (:DhcpSpoofingAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :DhcpSpoofingAttack)
+
+# Individual: :DhcpStarvationAttack (:DhcpStarvationAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :DhcpStarvationAttack)
+
+# Individual: :Double-Tagging_Prevention (:Double-Tagging_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :Double-Tagging_Prevention)
+
+# Individual: :DoubleTaggingAttack (:DoubleTaggingAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :DoubleTaggingAttack)
+
+# Individual: :High (:High)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackImpact> :High)
+
+# Individual: :ID01_PortSecurity (:ID01_PortSecurity)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID01_PortSecurity)
+
+# Individual: :ID02_UdpPackets (:ID02_UdpPackets)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID02_UdpPackets)
+
+# Individual: :ID03_Protocol802.1q (:ID03_Protocol802.1q)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID03_Protocol802.1q)
+
+# Individual: :ID04_SpoofPvlanTraffic (:ID04_SpoofPvlanTraffic)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID04_SpoofPvlanTraffic)
+
+# Individual: :ID05_ArbitraryCode (:ID05_ArbitraryCode)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID05_ArbitraryCode)
+
+# Individual: :ID06_SubsetAdvert (:ID06_SubsetAdvert)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID06_SubsetAdvert)
+
+# Individual: :ID07_FrameVtp (:ID07_FrameVtp)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID07_FrameVtp)
+
+# Individual: :ID08_VtpUpdate (:ID08_VtpUpdate)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID08_VtpUpdate)
+
+# Individual: :ID09_VtpBufferOverflow (:ID09_VtpBufferOverflow)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID09_VtpBufferOverflow)
+
+# Individual: :ID10_VoiceVlan (:ID10_VoiceVlan)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID10_VoiceVlan)
+
+# Individual: :ID11_VtpNotTransparent (:ID11_VtpNotTransparent)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID11_VtpNotTransparent)
+
+# Individual: :ID12_VlanLanNotRegistered (:ID12_VlanLanNotRegistered)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID12_VlanLanNotRegistered)
+
+# Individual: :ID13_DroppedPackets (:ID13_DroppedPackets)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID13_DroppedPackets)
+
+# Individual: :ID14_MalformedFrame (:ID14_MalformedFrame)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID14_MalformedFrame)
+
+# Individual: :ID15_MemoryCorruption (:ID15_MemoryCorruption)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID15_MemoryCorruption)
+
+# Individual: :ID16_UserSpaceAccess (:ID16_UserSpaceAccess)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID16_UserSpaceAccess)
+
+# Individual: :ID17_PromiscuousMode (:ID17_PromiscuousMode)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID17_PromiscuousMode)
+
+# Individual: :ID18_PriorityTagged (:ID18_PriorityTagged)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID18_PriorityTagged)
+
+# Individual: :ID19_FlagRestriction (:ID19_FlagRestriction)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID19_FlagRestriction)
+
+# Individual: :ID20_SpoofUser (:ID20_SpoofUser)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID20_SpoofUser)
+
+# Individual: :ID21_FrameFlood (:ID21_FrameFlood)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID21_FrameFlood)
+
+# Individual: :ID22_EncryptionFunctionality (:ID22_EncryptionFunctionality)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID22_EncryptionFunctionality)
+
+# Individual: :ID23_ArpRequest (:ID23_ArpRequest)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID23_ArpRequest)
+
+# Individual: :ID24_VlansEnumeration (:ID24_VlansEnumeration)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID24_VlansEnumeration)
+
+# Individual: :ID25_ReservedVlanPacket (:ID25_ReservedVlanPacket)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID25_ReservedVlanPacket)
+
+# Individual: :ID26_VlanIsolation (:ID26_VlanIsolation)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID26_VlanIsolation)
+
+# Individual: :ID27_SniffingVlan (:ID27_SniffingVlan)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID27_SniffingVlan)
+
+# Individual: :ID28_VlanIndexes (:ID28_VlanIndexes)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID28_VlanIndexes)
+
+# Individual: :ID29_VlanHeaders (:ID29_VlanHeaders)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID29_VlanHeaders)
+
+# Individual: :ID30_AuthenticationFails (:ID30_AuthenticationFails)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID30_AuthenticationFails)
+
+# Individual: :ID31_BufferOverflowVlanStrip (:ID31_BufferOverflowVlanStrip)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID31_BufferOverflowVlanStrip)
+
+# Individual: :ID32_VlanAuthentication (:ID32_VlanAuthentication)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID32_VlanAuthentication)
+
+# Individual: :ID33_ImproperAccess (:ID33_ImproperAccess)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID33_ImproperAccess)
+
+# Individual: :ID34_VtpProcessing (:ID34_VtpProcessing)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID34_VtpProcessing)
+
+# Individual: :ID35_ErrdisableCondition (:ID35_ErrdisableCondition)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID35_ErrdisableCondition)
+
+# Individual: :ID36_TrafficExposure (:ID36_TrafficExposure)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID36_TrafficExposure)
+
+# Individual: :ID37_ConfigurationBigIp (:ID37_ConfigurationBigIp)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID37_ConfigurationBigIp)
+
+# Individual: :ID38_RecursionLoop (:ID38_RecursionLoop)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID38_RecursionLoop)
+
+# Individual: :ID39_ExposureOfPorts (:ID39_ExposureOfPorts)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID39_ExposureOfPorts)
+
+# Individual: :ID40_IncorrectTraffic (:ID40_IncorrectTraffic)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID40_IncorrectTraffic)
+
+# Individual: :ID41_TrafficDiscard (:ID41_TrafficDiscard)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID41_TrafficDiscard)
+
+# Individual: :ID42_MacIpBindings (:ID42_MacIpBindings)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID42_MacIpBindings)
+
+# Individual: :ID43_GroupVlanConfiguration (:ID43_GroupVlanConfiguration)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID43_GroupVlanConfiguration)
+
+# Individual: :ID44_InterpretationConflict (:ID44_InterpretationConflict)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID44_InterpretationConflict)
+
+# Individual: :ID45_SecurityValidation (:ID45_SecurityValidation)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID45_SecurityValidation)
+
+# Individual: :ID46_MulticastDns (:ID46_MulticastDns)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID46_MulticastDns)
+
+# Individual: :ID47_Layer2Loop (:ID47_Layer2Loop)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID47_Layer2Loop)
+
+# Individual: :ID48_DirectConnection (:ID48_DirectConnection)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID48_DirectConnection)
+
+# Individual: :ID49_LogicErrorAp (:ID49_LogicErrorAp)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalVulnerability> :ID49_LogicErrorAp)
+
+# Individual: :Integrity (:Integrity)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty> :Integrity)
+
+# Individual: :Low (:Low)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackImpact> :Low)
+
+# Individual: :MAC-Spoofing_Prevention (:MAC-Spoofing_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :MAC-Spoofing_Prevention)
+
+# Individual: :MacSpoofingAttack (:MacSpoofingAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :MacSpoofingAttack)
+
+# Individual: :Medium (:Medium)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackImpact> :Medium)
+
+# Individual: :Multicast-Brute-Force_Prevention (:Multicast-Brute-Force_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :Multicast-Brute-Force_Prevention)
+
+# Individual: :MulticastBruteForceAttack (:MulticastBruteForceAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :MulticastBruteForceAttack)
+
+# Individual: :PVLAN-Attack_Prevention (:PVLAN-Attack_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :PVLAN-Attack_Prevention)
+
+# Individual: :Privacy (:Privacy)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty> :Privacy)
+
+# Individual: :PvlanAttack (:PvlanAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :PvlanAttack)
+
+# Individual: :Randon-Frame-Stress_Prevention (:Randon-Frame-Stress_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :Randon-Frame-Stress_Prevention)
+
+# Individual: :RandonFrameStressAttack (:RandonFrameStressAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :RandonFrameStressAttack)
+
+# Individual: :Resilience (:Resilience)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#SecurityProperty> :Resilience)
+
+# Individual: :STP-Attack_Prevention (:STP-Attack_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :STP-Attack_Prevention)
+
+# Individual: :StpAttack (:StpAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :StpAttack)
+
+# Individual: :SwitchSpoofingAttack (:SwitchSpoofingAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :SwitchSpoofingAttack)
+
+# Individual: :VLAN-Hopping_Prevention (:VLAN-Hopping_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :VLAN-Hopping_Prevention)
+
+# Individual: :VMPS-VQP-Attack_Prevention (:VMPS-VQP-Attack_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :VMPS-VQP-Attack_Prevention)
+
+# Individual: :VTP-Attack_Prevention (:VTP-Attack_Prevention)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#AttackPrevention> :VTP-Attack_Prevention)
+
+# Individual: :VlanHoppingAttack (:VlanHoppingAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :VlanHoppingAttack)
+
+# Individual: :VtpAttack (:VtpAttack)
+
+ClassAssertion(<http://www.semanticweb.org/hall/ontologies/2022/10/untitled-ontology-16#TechnologicalAttack> :VtpAttack)
+
+
+)
